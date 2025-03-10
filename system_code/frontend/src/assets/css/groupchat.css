@@ -1,0 +1,186 @@
+.groupchat{
+    height: calc(100% + 40px);
+    margin-bottom: -40px;
+
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    position: relative;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+
+/* conversation header */
+.groupchat-header{
+    height: 70px;
+    background-color: var(--grey-color-light);
+    padding: 0px 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap:30px;
+
+    align-items: center;
+    overflow: auto;
+
+}
+
+.groupchat-person{
+    display: flex;
+    flex: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.groupchat-profile{
+    width: 49px;
+    height: 47px;
+    border-radius: 100000px;
+}
+
+.groupchat-character-name{
+    font-size: var(--content-size-small);
+    /* font-weight: var(--font-bold-weight); */
+    line-height: var(--content-line-height);
+}
+
+
+
+
+
+/* avatar message */
+.avatar-message-box{
+    width: 100%;
+    /* margin: 0 30px; */
+    display: flex;
+}
+
+.avatar-message-box-right{
+    justify-content: right;
+    /* transform: translate(20%, 0); */
+}
+
+.avatar-message-box-left{
+    justify-content: left;
+    /* transform: translate(-20%,0); */
+}
+
+.avatar-profile-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.avatar-message{
+    max-width: 428px;
+    height: auto;
+    background-color: var(--grey-color-dark);
+    border-radius: 12px;
+    padding: 10px 20px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.avatar-profile-container{
+    display: flex;
+    align-items: end;
+}
+
+.avatar-content{
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    min-height: 1rem;
+}
+.avatar-profile{
+    height: 25px;
+    width: 25px;
+}
+.avatar-profile img{
+    border-radius: 10000px;
+}
+
+.avatar-message-me-true .avatar-content{
+    background-color: var(--grey-color-light);
+    color: var(--text-color);
+}
+
+.avatar-message-me-false .avatar-content{
+    background-color: var(--grey-color-light);
+    color: var(--text-color);
+}
+
+
+
+/***************************  character descriptions **********************************/
+.groupchat-info{
+    width: 50%;
+    min-width: 660px;
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 15px;
+    padding: 20px 0  20px 40px ;
+}
+
+.groupchat-info-heading{
+    font-size: var(--h2-size);
+    font-weight: var(--font-bold-weight);
+    line-height: var(--h2-line-height);
+}
+
+.groupchat-info-body{
+    padding-right: 15px;
+    width: calc(100% - 40px);
+    overflow: auto;
+    /* height: 700px; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.groupchat-info-block{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: var(--grey-color-dark);
+}
+
+.groupchat-info-block-profile-box{
+    height: 170px;
+    width: 150px;
+}
+.groupchat-info-block-profile-box img{
+    border-radius: 12px;
+}
+
+.groupchat-info-block-right{
+    display: grid;
+    grid-template-rows: 1fr auto auto auto;
+    gap: 12px;
+    height: 150px;
+    width: 100%;
+}
+
+.groupchat-info-block-name{
+    font-size: var(--content-size);
+    font-weight: var(--font-bold-weight);
+    line-height: var(--content-line-height);
+}
+.groupchat-info-block-info span{
+    font-size: var(--content-size-small);
+    line-height: var(--content-line-height);
+    font-weight: var(--font-bold-weight);
+}
+.groupchat-info-block-info {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    line-height: var(--content-line-height);
+}

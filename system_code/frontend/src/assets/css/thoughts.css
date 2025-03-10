@@ -1,0 +1,103 @@
+.thoughts-page{
+    padding: 20px 0px;
+    height: 100%;
+    /* width: 90%; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+.thoughts-page-heading,
+.thoughtimg-page-heading{
+    padding: 0 100px;
+    font-size: var(--h2-size);
+    font-weight: var(--font-bold-weight);
+    line-height: var(--h2-line-height);
+}
+
+/* body */
+.thoughts-page-body{
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.thoughts-page-panel{
+    width: 100%;
+    height: 541px;
+    background-color: var(--grey-color-dark);
+    border-radius: 24px;
+    padding:20px 80px;
+}
+
+
+/* button */
+.thoughts-page-buttons{
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: right;
+}
+
+
+.thoughts-page-return {
+    width: 201px;
+    height: 48px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: var(--dec-color);
+    color: var(--bg-color);
+    outline: none;
+}
+
+/* body */
+.thoughts-page-title{
+    font-size: var(--h3-size);
+    /* font-weight: var(--font-bold-weight); */
+    line-height: var(--h3-line-height);
+}
+
+.thoughts-page-form{
+    margin:20px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+.thoughts-page-content{
+    width: 100%;
+    height: 358px;
+    padding: 1rem;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: var(--grey-color-light);
+    color: var(--text-color);
+    font-size: var(--content-size);
+    line-height: var(--content-line-height);
+    outline: none;
+    text-align: justify;
+    resize: none;
+}
+
+.thoughts-page-generate{
+    width: 165px;
+    height: 44px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: var(--dec-color);
+    color: var(--bg-color);
+    outline: none;
+}
