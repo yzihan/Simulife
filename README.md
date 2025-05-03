@@ -16,7 +16,7 @@ This repo is the raw quantative data and analysis code for project Simulife.
 - [x] 🚑 `analysis_code`: Data Analysis and Visualization Scripts -- This section hosts the Jupyter notebooks used for data analysis and visualization:
   - [x] `simu_main_analysis.ipynb`: The primary notebook for conducting main data analyses.
   - [x] `simu_side_analysis.ipynb`: Supplementary notebook for conducting additional data analyses.
-- [x] `system_code`: ### Implementation Code for System -- This directory is divided into two parts, containing the source codes for the system's frontend and backend:
+- [x] `system_code`: Implementation Code of System -- This directory is divided into two parts, containing the source codes for the system's frontend and backend:
   - [x] `backend`: Contains all backend-related codes, managing data processing and system logic.
   - [x] `frontend`: Includes all frontend-related codes, responsible for user interface design and interaction handling.
 
