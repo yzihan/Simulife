@@ -1,0 +1,195 @@
+:root {
+    /* colors */
+    --bg-color: #000; /* Light mode background color */
+    --text-color: #fff; /* Light mode text color */
+    --grey-color-light:  #373737;;
+    --grey-color-dark: #282828;
+    --grey-color-deep-dark: #161616;
+    --dec-color: #c8edfd;
+    --input-placeholder-color:#363636;
+  
+  
+      /* for scroll bar */
+      --scroll-bar-bg: #161616;
+      --scroll-bar-thumb: #777;
+      --scroll-bar-shadow: rgba(255,255,255,0.3);
+
+
+      /* font size */
+      --h1-size: 3.5rem;
+      --h2-size: 2.75rem;
+      --h3-size:1.5rem;
+      --content-size:1.25rem;
+      --content-size-small: 1.1rem;
+      --notes-size: 1rem;
+
+      --h1-line-height: 4rem;
+      --h2-line-height: 2.5rem;
+      --h3-line-height:2rem;
+      --mid-line-height:1.5rem;
+      --content-line-height:1.25rem;
+      --notes-line-height: 1rem;
+
+      --font-bold-weight:600;
+
+      --font-family-body: "open sans condense";
+      --font-family-title: "pattaya";
+
+  }
+
+
+
+*{
+    /* font-family: 'font-regular', sans-serif; */
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-size: var(--content-size-small);
+    line-height: var(--content-line-height);
+    font-family: var(--font-family-body);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.main{
+    position: absolute;
+    top: 0px;
+    left: 96px;
+    height: 100%;
+    min-height: 100vh;
+    width: calc(100% - 96px);
+
+    /* display: inline-grid;    */
+     /* work like a grid, the story page takes full height as children's heights */
+}
+button{
+    cursor: pointer;
+}
+
+/* to make img in center no matter the box size */
+.img-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.box-img{
+  min-width: 100%;
+  min-height: 100%;
+  display: block; 
+  object-fit: cover;
+}
+
+
+@font-face {
+  font-family: "open sans condense";
+  src: url('./assets/fonts/osanscondensed/OpenSans_Condensed-Medium.ttf');
+}
+
+@font-face {
+  font-family: "pattaya";
+  src: url("./assets/fonts/Pattaya/Pattaya-Regular.ttf");
+}
+
+/* @font-face {
+    font-family: 'font-bold';
+    src: url('./assets/fonts/Fontin-Bold.otf') format('opentype');
+}
+
+
+@font-face {
+    font-family: 'font-italic';
+    src: url('./assets/fonts/Fontin-Italic.otf') format('opentype');
+}
+
+
+@font-face {
+    font-family: 'font-regular';
+    src: url('./assets/fonts/Fontin-Regular.otf') format('opentype');
+}
+
+
+@font-face {
+    font-family: 'font-smallcaps';
+    src: url('./assets/fonts/Fontin-SmallCaps.otf') format('opentype');
+}
+ */
+
+/* loading icon */
+.loading-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+  }
+  
+  .loading{
+    /* add animation */
+    animation: spin 2s linear infinite;
+    width: 100px;
+    height: 100px;
+  }
+  
+  @keyframes spin {
+  from {
+        transform: rotate(0deg);
+    }
+    to 
+    {
+        transform: rotate(360deg);
+    }
+  }
+  
+  .loading-background{
+    background-color: var(--grey-color-light);
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 10;
+  }
+  
+  .isloading-false{
+    display: none;
+  }
+  
+  
+  
+  
+  *::-webkit-scrollbar {
+    width: 7px;
+    background-color: #eee;
+    border-radius: 20px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px var(--scroll-bar-shadow);
+    background-color: var(--scroll-bar-bg);
+    border-radius: 20px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-bar-thumb);
+    border-radius: 20px;
+  }
+
+
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-scrollbar::-webkit-scrollbar-track {
+    display: none;
+  }
+  
+  .no-scrollbar::-webkit-scrollbar-thumb {
+    display: none; 
+  }
